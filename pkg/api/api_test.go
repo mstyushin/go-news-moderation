@@ -4,10 +4,11 @@ import (
 	"bytes"
 	"encoding/json"
 	"fmt"
-	"go-news-moderation/pkg/config"
 	"net/http"
 	"net/http/httptest"
 	"testing"
+
+	"github.com/mstyushin/go-news-moderation/pkg/config"
 
 	"github.com/stretchr/testify/assert"
 )

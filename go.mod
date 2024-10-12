@@ -1,4 +1,4 @@
-module go-news-moderation
+module github.com/mstyushin/go-news-moderation
 
 go 1.22
 

@@ -17,7 +17,7 @@ endif
 $(eval VERSIONDATE := $(shell git show -s --format=%cI $($VERSION)))
 
 build:
-	@go mod tidy && go build -ldflags="-X 'go-news-moderation/pkg/config.Version=$(VERSION)' -X 'go-news-moderation/pkg/config.Hash=$(HASHCOMMIT)' -X 'go-news-moderation/pkg/config.VersionDate=$(VERSIONDATE)'" -o bin/$(APP_NAME) go-news-moderation/cmd/server
+	@go mod tidy && go build -ldflags="-X 'go-news-moderation/pkg/config.Version=$(VERSION)' -X 'go-news-moderation/pkg/config.Hash=$(HASHCOMMIT)' -X 'go-news-moderation/pkg/config.VersionDate=$(VERSIONDATE)'" -o bin/$(APP_NAME) github.com/mstyushin/go-news-moderation/cmd/server
 	@chmod +x bin/$(APP_NAME)
 
 run: build

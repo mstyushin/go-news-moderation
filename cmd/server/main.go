@@ -2,12 +2,13 @@ package main
 
 import (
 	"context"
-	"go-news-moderation/pkg/api"
-	"go-news-moderation/pkg/config"
 	"log"
 	"os"
 	"os/signal"
 	"syscall"
+
+	"github.com/mstyushin/go-news-moderation/pkg/api"
+	"github.com/mstyushin/go-news-moderation/pkg/config"
 )
 
 const (

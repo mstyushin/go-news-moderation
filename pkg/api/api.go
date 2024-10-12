@@ -3,10 +3,11 @@ package api
 import (
 	"context"
 	"fmt"
-	"go-news-moderation/pkg/config"
 	"log"
 	"net"
 	"net/http"
+
+	"github.com/mstyushin/go-news-moderation/pkg/config"
 
 	"github.com/gorilla/mux"
 )
