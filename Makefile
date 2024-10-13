@@ -40,3 +40,4 @@ docker-image:
 
 docker-push:
 	docker push mstyushin/go-news-moderation:$(VERSION)
+	docker push mstyushin/go-news-moderation:latest
