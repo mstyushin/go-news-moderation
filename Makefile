@@ -34,3 +34,9 @@ clean: stop
 	@rm -f bin/*
 	@rm -f log/*
 	@rm -f /tmp/$(APP_NAME).pid
+
+docker-image:
+	docker build . -t  mstyushin/go-news-moderation:$(VERSION) -t mstyushin/go-news-moderation:latest
+
+docker-push:
+	docker push mstyushin/go-news-moderation:$(VERSION)
